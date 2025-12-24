@@ -1,0 +1,2 @@
+rootProject.name = 'WebViewMediaLauncher'
+include ':app'
