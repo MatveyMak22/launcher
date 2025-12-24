@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
-
 #
 # Copyright 2011-2022 the original author or authors.
 #
