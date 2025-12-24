@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <data-extraction-rules>
+        <allow
+            maxSdkVersion="33"
+            include="WebViewStates.xml" />
+    </data-extraction-rules>
+</resources>
