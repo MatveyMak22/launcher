@@ -23,8 +23,11 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
-    - name: Install Gradle
-      run: sudo apt-get update && sudo apt-get install -y gradle
+    - name: Download and add Gradle 7.5 to PATH
+      run: |
+        curl -sSL https://services.gradle.org/distributions/gradle-7.5-bin.zip -o gradle.zip
+        unzip -q gradle.zip -d gradle
+        echo "${{ github.workspace }}/gradle/gradle-7.5/bin" >> $GITHUB_PATH
     - name: Build debug APK (app module)
       run: gradle :app:assembleDebug --no-daemon
 
